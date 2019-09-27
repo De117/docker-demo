@@ -9,6 +9,9 @@ node {
 
         stage 'Push Docker image to ECR'
         img.push('latest')
+
+        // this should break
+        fawdawfaw
     }
     catch (e) {
         currentBuild.result = "FAILED"
